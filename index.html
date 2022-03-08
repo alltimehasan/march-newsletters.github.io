@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="*|MC:SUBJECT|*" />
+        
+        <title>*|MC:SUBJECT|*</title>
+		<style type="text/css">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+			
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+			
+			/* Template Styles */
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
+			* @theme page
+			*/
+			body, #backgroundTable{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border: 1px solid #DDDDDD;
+			}
+			
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1, .h1{
+				/*@editable*/ color:#001C38;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:30px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:125%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2, .h2{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:28px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:125%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3, .h3{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4, .h4{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:22px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color for your email's preheader area.
+			* @theme page
+			*/
+			#templatePreheader{
+				border: 1px solid #DDDDDD;
+				margin-top: 10px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			.flf-logo img {
+				text-align: center;
+				margin: auto;
+				width: 199px;
+				display: block;
+			}
+			
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+			}
+			
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and border for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-bottom:0;
+			}
+			
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding:0;
+				/*@editable*/ text-align:center;
+				/*@editable*/ vertical-align:middle;
+			}
+			
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COLUMNS; LEFT, RIGHT /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			/**
+			* @tab Columns
+			* @section left column link
+			* @tip Set the styling for your email's left column links. Choose a color that helps them stand out from your text.
+			*/
+			.leftColumnContent div a:link, .leftColumnContent div a:visited, /* Yahoo! Mail Override */ .leftColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.leftColumnContent img{
+				display:inline;
+				height:auto;
+			}
+			
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent div{
+				/*@editable*/ color:#000000;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:center;
+			}
+
+			.rightColumnContent .h3 {
+				text-align: center;
+				line-height: 125%;
+			}
+
+			.leftColumnContent .h4 {
+				text-align: center;
+				line-height: 125%;
+				font-size: 20px;
+				margin-top: 15px;
+			}
+			
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column links. Choose a color that helps them stand out from your text.
+			*/
+			
+			.rightColumnContent img{
+				display:inline;
+				height:auto;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color for your email's body area.
+			*/
+			#templateContainer, .bodyContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent div{
+				/*@editable*/ color:#000000;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:center;
+			}
+			
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			
+			.bodyContent img{
+				display:inline;
+				height:auto;
+			}
+
+			.latestBlog {
+				background-color: #001C38;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.latestBlog .h1 {
+				color: #FFBB1A;
+				margin-bottom: 0;
+				text-align: center;
+			}
+
+			#templateNoFee {
+				background-image: url(./bg_2.png);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.noFeeContent .h2 {
+				color: #FFBB1A;
+				text-align: center;
+				font-size: 28px;
+			}
+
+			.noFeeContent .h4 {
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 130%;
+				font-size: 20px;
+			}
+
+			.noFeeContent .h1 {
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 30px;
+				text-transform: uppercase;
+			}
+
+			#templateSpeaking {
+				background-image: url(./bg_1.png);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.speakingContent .h2 {
+				color: #001C38;
+				text-align: center;
+				font-size: 28px;
+			}
+
+			.speakingContent .h4 {
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 125%;
+			}
+
+			.speakingContent .h1 {
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 30px;
+				text-transform: uppercase;
+			}
+
+
+			#templateAward {
+				background-color: #001C38;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				text-align: center;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and top border for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#FFBB1A;
+				/*@editable*/ border-top:0;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent div{
+				/*@editable*/ color:#001C38;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:18px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:center;
+				font-weight: bold;
+			}
+			
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#FFFFFF;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+			
+			.footerContent img{
+				display:inline;
+			}
+			
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			* @theme footer
+			*/
+			#social{
+				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ border:0;
+			}
+			
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			*/
+			#social div{
+				/*@editable*/ text-align:center;
+			}
+			
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
+			*/
+			#utility{
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			*/
+			#utility div{
+				/*@editable*/ text-align:center;
+			}
+			
+			#monkeyRewards img{
+				max-width:190px;
+			}
+			.marchBtn:link, .marchBtn:visited {
+				/*@editable*/ font-family:Arial;
+				display: block;
+				margin: auto;
+				background-color: #FFBB1A;
+				color: #001C38;
+				font-weight: bold;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 15px;
+				margin-top: 15px;
+				text-transform: uppercase;
+			}
+			.marchBtnAlt:link, .marchBtnAlt:visited {
+				/*@editable*/ font-family:Arial;
+				display: block;
+				margin: auto;
+				background-color: #001C38;
+				color: #FFFFFF;
+				font-weight: bold;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-top: 15px;
+				text-transform: uppercase;
+			}
+			.marchBtnOutline:link, .marchBtnOutline:visited {
+				/*@editable*/ font-family:Arial;
+				display: block;
+				margin: auto;
+				background-color: transparent;
+				border: 2px solid #FFBB1A;
+				color: #FFFFFF;
+				font-weight: bold;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-top: 15px;
+				text-transform: uppercase;
+			}
+			.marchBtnOutlineAlt:link, .marchBtnOutlineAlt:visited {
+				/*@editable*/ font-family:Arial;
+				display: block;
+				margin: auto;
+				background-color: transparent;
+				border: 2px solid #001C38;
+				color: #001C38;
+				font-weight: bold;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-top: 15px;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+            	<tr>
+                	<td align="center" valign="top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="10" cellspacing="0" width="600" id="templatePreheader">
+                            <tr>
+                                <td valign="top" class="preheaderContent" colspan="2">
+                                
+                                	<!-- // Begin Module: Standard Preheader \ -->
+                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top" style="width: 100%;">
+                                            	<div mc:edit="std_preheader_content" class="flf-logo">
+                                                	 <!-- // Begin Module: Standard Header Image \\ -->
+                                            		<img src="./FLF-Logo_blue.png" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<!-- // End Module: Standard Header Image \\ -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                	<!-- // End Module: Standard Preheader \ -->
+                                
+                                </td>
+                            </tr>
+							<tr>
+								<td valign="top" width="280" class="leftColumnContent">
+								
+									<!-- // Begin Module: Top Image with Content \\ -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr mc:repeatable>
+											<td valign="top">
+												<img src="./justin-farahi.png" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
+											</td>
+										</tr>
+									</table>
+									<!-- // End Module: Top Image with Content \\ -->
+								
+								</td>
+								<td valign="top" width="280" class="rightColumnContent">
+								
+									<!-- // Begin Module: Top Image with Content \\ -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr mc:repeatable>
+											<td valign="top">
+												<div mc:edit="tiwc300_content01">
+													<h3 class="h3">Justin Farahi Named ATTORNEY of the Year</h3>
+													The National Alliance of Attorneys (NAOA) named Atty. Justin Farahi 2022 Attorney of the Year for his leadership, superior qualifications in the personal injury law, and stellar trial results in the state of California.
+													<a href="" class="marchBtn">READ MORE</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!-- // End Module: Top Image with Content \\ -->
+								
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" width="280" class="rightColumnContent">
+								
+									<!-- // Begin Module: Top Image with Content \\ -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr mc:repeatable>
+											<td valign="top">
+												<div mc:edit="tiwc300_content01">
+													<h3 class="h3">Changing the World, One Intersection at a Time</h3>
+													Following the heartbreaking wrongful death case involving two teenagers in Bakersfield, Farahi Law Firm has committed to helping improve the safety of California for all children. We stand in support of our client Josefina Rosel in getting the justice their families deserve.
+													<a href="" class="marchBtnAlt">SUPPORT THE CAUSE</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!-- // End Module: Top Image with Content \\ -->
+								
+								</td>
+								<td valign="top" width="280" class="leftColumnContent">
+								
+									<!-- // Begin Module: Top Image with Content \\ -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr mc:repeatable>
+											<td valign="top">
+												<img src="./change-org.png" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
+												<div>
+													<h4 class="h4">Support the Cause at change.org</h4>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!-- // End Module: Top Image with Content \\ -->
+								
+								</td>
+							</tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" id="gallery_1">
+                            <tr>
+                                <td valign="top" class="preheaderContent">
+                                
+                                	<!-- // Begin Module: Standard Preheader \ -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top">
+                                            	<div mc:edit="std_preheader_content">
+                                                	 <!-- // Begin Module: Standard Header Image \\ -->
+                                            		<img src="./img_1.png" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<!-- // End Module: Standard Header Image \\ -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                	<!-- // End Module: Standard Preheader \ -->
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+										<tr>
+                                        	<td colspan="3" valign="top" class="bodyContent">
+                                            
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" style="padding-top: 20px; padding-bottom: 20px;">
+                                                            <div mc:edit="std_content00">
+                                                                <h1 class="h1">Farahi Law Firm<br>Partners With School On Wheels To<br>Donate Laptops to Children</h1>
+																<br>
+                                                                Farahi Law Firm partnered with School on Wheels and People Assisting The Homeless (PATH) to donate laptops as part of our You Care, We Care Too program. Three children received brand new laptops to help them continue their education through remote learning. 
+                                                                <br />
+                                                                <br />
+                                                                <a href="#" class="marchBtn" target="_blank">Read more about this endeavor</a>
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                            
+                                            </td>
+                                        </tr>
+										<tr>
+                                        	<td colspan="3" valign="top" class="bodyContent">
+                                            
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="latestBlog">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <div mc:edit="std_content00">
+                                                                <h1 class="h1">LATEST FROM OUR BLOG</h1>
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td valign="top" width="280" class="leftColumnContent" style="padding-top: 20px; padding-bottom: 20px;">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="top">
+                                                            <img src="./img_2.png" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+                                        	<td valign="middle" width="280" class="rightColumnContent" style="padding-top: 20px; padding-bottom: 20px;">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="middle">
+                                                            <div mc:edit="tiwc300_content01">
+ 	                                                           <h3 class="h3">Advantages of Having a Spanish-Speaking Personal Injury Lawyer</h3>
+																A large percentage of California residents have Spanish as their first language.Having a Spanish-speaking personal injury lawyer not only prevents misinterpretation, but also makes clients feel that they are truly heard and understood…
+																<a href="#" class="marchBtn" target="_blank">READ MORE</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td valign="middle" width="280" class="rightColumnContent" style="padding-top: 20px; padding-bottom: 20px;">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="middle">
+                                                            <div mc:edit="tiwc300_content01">
+ 	                                                           <h3 class="h3">What Is Loss of Consortium? Steps to File a Claim</h3>
+																Loss of consortium is a personal injury claim that the spouse of an accident victim can make for wrongful death or injury. It does not pertain to economic damages due to an accident — these damages include loss of care, love, sexual relations, and more.
+																<a href="#" class="marchBtn" target="_blank">READ MORE</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+											<td valign="middle" width="280" class="leftColumnContent" style="padding-top: 20px; padding-bottom: 20px;">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="middle">
+                                                            <img src="./img_3.png" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateNoFee">
+                                    	<tr>
+                                        	<td valign="top" class="noFeeContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="middle">
+                                                            <div mc:edit="std_content00">
+                                                                <h2 class="h2">Victim of an accident?<br>JUSTIN FOR JUSTICE HAS YOUR BACK!</h2>
+																<br>
+                                                                <h4 class="h4">Get 5x to 7x more money for your personal injury claim.<br>Get the best medical care in California.<br>Get your property damage repaired for free.<br>Get a cash advance on your case.</h4>
+																<h3 class="h2">How much is my case worth?</h3>
+																<br>
+                                                                <a href="#" class="marchBtnOutline" target="_blank">Get a FREE Case Value Estimate</a>
+																<br>
+																<h1 class="h1">NO FEE UNLESS WE WIN</h1>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateSpeaking">
+                                    	<tr>
+                                        	<td valign="top" class="speakingContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="middle">
+                                                            <div mc:edit="std_content00">
+                                                                <h2 class="h2">We speak English and Spanish</h2>
+																<br>
+                                                                <h4 class="h4">Call us ANYTIME, day or night. We will come to you wherever you are in California.</h4>
+																<br>
+																<h2 class="h2">YOU DON’T HAVE TO PAY ANYTHING<br>TO START WORKING WITH US<br>ABSOLUTELY NO FEES UNLESS WE WIN</h2>
+																<br>
+																<h1 class="h1">We work on a contingency basis</h1>	
+                                                                <br/>
+                                                                <a href="#" class="marchBtnOutlineAlt" target="_blank">CALL US FOR A FREE CONSULTATION</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateAward">
+                                    	<tr>
+                                        	<td valign="top" class="awardContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td colspan="2" valign="middle">
+                                                            <div mc:edit="std_content00">
+                                                                <img src="./img_4.png" style="max-width:600px;" mc:label="image" mc:edit="tiwc300_image00" />
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="middle">
+                                                            <div>
+                                                                Farahi Law Firm | Questions? <a href="mailto:info@farahilaw.com">Email Us</a> | Call Us: <a href="tel:(844) 824-2955">(844) 824-2955</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
